@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/textoEditable"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="left|top"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/boton"
+        android:text="Mostar toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:onClick="mostrar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number spinner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/textoEditableSpinner"
+            android:layout_width="500sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:inputType="phone" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <Button
+            android:id="@+id/botonSpinner"
+            android:layout_gravity="end"
+            android:text="Mostar toast Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono: "/>
+
+        <TextView
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige la fecha y la hora"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/botonDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIA"
+            android:onClick="mostrarDateDialog"/>
+
+        <Button
+            android:id="@+id/botonHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HORA"
+            android:onClick="mostrarTimeDialog"/>
+
+    </LinearLayout>
+</LinearLayout>

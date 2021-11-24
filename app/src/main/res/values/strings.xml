@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Topic7_tasks1-5</string>
+    <string-array name="array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+</resources>
